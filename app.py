@@ -3,7 +3,7 @@ import replicate
 
 # Function to get response from the model using Replicate API
 def getResponse(input_text, no_of_words, blog_style):
-    # Replace with your actual Replicate API token
+  
     replicate_client = replicate.Client(api_token="r8_MLSQkDZgamCRh8TpqgmaNjWfKmQqo3Q3nkoxq")
 
     # Prompt Template
