@@ -22,7 +22,7 @@ def getResponse(input_text, no_of_words, blog_style):
     print(output)
     return output
 
-# Streamlit
+# Streamlit setting up:
 st.set_page_config(page_title="Generate Blogs", page_icon='🐸', layout='centered', initial_sidebar_state='collapsed')
 
 st.header("Generate Blogs 🐸")
@@ -41,7 +41,7 @@ with col2:
 
 submit = st.button("Generate")
 
-# To get the response
+# response
 if submit:
     if input_text and no_of_words and blog_style:
         response = getResponse(input_text, no_of_words, blog_style)
@@ -49,5 +49,3 @@ if submit:
     else:
         st.warning("Please fill out all fields.")
 
-# To run the Streamlit app, use the command:
-# streamlit run app.py
