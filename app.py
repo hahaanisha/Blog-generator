@@ -4,7 +4,7 @@ import replicate
 # Function to get response from the model using Replicate API
 def getResponse(input_text, no_of_words, blog_style):
     # Replace with your actual Replicate API token
-    replicate_client = replicate.Client(api_token="r8_I1gDamZLrqbVcI0ANJweP7bXtubqM7013Yrbv")
+    replicate_client = replicate.Client(api_token="r8_MLSQkDZgamCRh8TpqgmaNjWfKmQqo3Q3nkoxq")
 
     # Prompt Template
     prompt = f"""
@@ -22,7 +22,7 @@ def getResponse(input_text, no_of_words, blog_style):
     print(output)
     return output
 
-# Streamlit UI setup
+# Streamlit
 st.set_page_config(page_title="Generate Blogs", page_icon='🐸', layout='centered', initial_sidebar_state='collapsed')
 
 st.header("Generate Blogs 🐸")
